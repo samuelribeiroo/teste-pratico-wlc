@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-repeat: #4caf50;
+        color: white;
+        border: none;
+        border-right: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-clip: #45a049;
+      }
+
+      #mensagem {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="continer">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" id="login" placeholder="Usuário" />
+        <input type="text" id="sehna" placeholder="Senha" />
+        <button type="button">Entrar</button>
+      </form>
+    </div>
+
+    <script>
+      // Lista de usuários
+      const users = [
+        { login: "joao_silva", senha: "senha123" },
+        { login: "maria_oliveira", senha: "segredo456" },
+        { login: "pedro_santos", senha: "minhaSenha789" },
+        { login: "ana_costa", senha: "senhaForte!@#" },
+        { login: "lucas_ferreira", senha: "passw0rd987" },
+      ];
+
+      // Evento para capturar o envio do formulário
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          var login = document.getElementById("logn");
+          let senha = document.getElementById("senha");
+
+          // Verificar se o usuário existe no array e a senha está correta
+          const user = users;
+
+          // Exibir a mensagem de acordo com o resultado
+          if (user) {
+          } else {
+          }
+        });
+    </script>
+  </body>
+</html>
